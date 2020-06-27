@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #4285f4;
-  --primary-color-dark:#117a8b;
+  --primary-color-dark: #117a8b;
   /* --accent-color:#ced4da; */
 }
 
@@ -55,35 +55,55 @@ body {
 }
 
 .card .body {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .card p {
-    margin:0
+  margin: 0;
+  margin-top: 1rem;
 }
 
-.card .input-group{
-    border-bottom: 1px solid #ced4da;
-    -webkit-transition: border-color 0.15s ease-in-out,
+.card .input-group {
+  border-bottom: 1px solid #ced4da;
+  -webkit-transition: border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    padding: 0 .5rem;
-    padding-bottom:.2rem ;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.card #paste{
-    width: 3vw;
-    height: 10vh;
-    border: 0;
-    background-color: var(--primary-color);
-    cursor: pointer;
+.card #paste {
+  width: 3.5rem;
+  height: 6vh;
+  background-color: var(--primary-color);
+  /* -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15); */
+
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  border-radius: 0.125rem;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.card #paste img {
+  width: 80%;
+  height: 70%;
 }
 
 .card #input_url {
@@ -94,7 +114,7 @@ body {
   box-sizing: border-box;
   height: auto;
   padding: 0.6rem 0 0.4rem 0;
-  margin: 0 ;
+  margin: 0;
   display: block;
   width: 100%;
   font-size: 1rem;
@@ -145,31 +165,65 @@ body {
 }
 
 .check {
-    background-color: var(--primary-color);
-    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
-    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
-    color: #ffffff;
-    cursor: pointer;
-    outline: 0;
-    border: 0;
-    border-radius: .125rem;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    padding: .84rem 2.14rem;
-    font-size: 1rem;
-    font-weight: 400;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    display: block;
-    width: 100%;
+  background-color: var(--primary-color);
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  border-radius: 0.125rem;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  padding: 0.84rem 2.14rem;
+  font-size: 1rem;
+  font-weight: 400;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  width: 100%;
 }
 
-.check:hover{
-    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
-    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
-    background-color: var(--primary-color-dark);
+.check:hover,
+#paste:hover {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-color-dark);
+}
+
+.message {
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s;
+  display: inline;
+}
+
+.message.show {
+  opacity: 1;
+}
+
+.message img {
+    width: 1.4rem;
+    vertical-align: top;
+    margin-right: 3%;
+}
+
+.message.error {
+  color: #E04F5F;
 }
 
 
+.card .body p span {
+  font-size: .85rem;
+  color: #E04F5F;
+}
