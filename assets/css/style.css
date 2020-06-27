@@ -62,23 +62,39 @@ body {
     margin:0
 }
 
-.card #input_url {
-  border: 0;
-  border-bottom: 1px solid #ced4da;
-  border-radius: 0;
-  outline: 0;
-  box-shadow: none;
-  -webkit-transition: border-color 0.15s ease-in-out,
+.card .input-group{
+    border-bottom: 1px solid #ced4da;
+    -webkit-transition: border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0 .5rem;
+    padding-bottom:.2rem ;
+}
+
+.card #paste{
+    width: 3vw;
+    height: 10vh;
+    border: 0;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.card #input_url {
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  box-shadow: none;
   box-sizing: border-box;
   height: auto;
   padding: 0.6rem 0 0.4rem 0;
-  margin: 0 0 0.5rem 0;
+  margin: 0 ;
   display: block;
   width: 100%;
   font-size: 1rem;
@@ -86,7 +102,7 @@ body {
   line-height: 1.5;
   color: #495057;
 }
-.card #input_url:focus {
+.card .input-group.active {
   border-bottom: 1px solid var(--primary-color);
   -webkit-box-shadow: 0 1px 0 0 var(--primary-color);
   box-shadow: 0 1px 0 0 var(--primary-color);
@@ -155,3 +171,5 @@ body {
     box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
     background-color: var(--primary-color-dark);
 }
+
+
